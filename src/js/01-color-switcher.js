@@ -6,6 +6,7 @@ function setRandomBC() {
   const bodyRef = document.querySelector('body');
   stopBtn.removeAttribute('disabled');
   startBtn.setAttribute('disabled', 'true');
+  bodyRef.style.backgroundColor = getRandomHexColor();
   timerId = setInterval(() => {
     bodyRef.style.backgroundColor = getRandomHexColor();
   }, 1000);
